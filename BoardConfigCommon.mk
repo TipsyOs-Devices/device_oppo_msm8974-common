@@ -71,7 +71,6 @@ BOARD_CHARGER_DISABLE_INIT_BLANK := true
 BOARD_HARDWARE_CLASS += device/oppo/msm8974-common/cmhw
 
 # Graphics
-BOARD_EGL_CFG := device/oppo/msm8974-common/configs/egl.cfg
 USE_OPENGL_RENDERER := true
 TARGET_CONTINUOUS_SPLASH_ENABLED := true
 TARGET_USES_C2D_COMPOSITION := true
@@ -108,6 +107,7 @@ WIFI_DRIVER_FW_PATH_AP           := "ap"
 TARGET_USES_WCNSS_CTRL           := true
 TARGET_USES_QCOM_WCNSS_QMI       := true
 TARGET_USES_WCNSS_MAC_ADDR_REV   := true
+CONFIG_EAP_PROXY                 := qmi
 
 # Filesystem
 TARGET_USERIMAGES_USE_EXT4 := true
